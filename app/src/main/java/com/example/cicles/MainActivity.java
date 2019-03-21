@@ -1,5 +1,6 @@
 package com.example.cicles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void Salvar(View view) {
 
-        Toast.makeText(this, "yooi", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "hora de ver", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, CalendarioActivity.class);
+
+        startActivity(intent);
+
     }
 }
