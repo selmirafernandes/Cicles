@@ -3,4 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="save">Save</string>
     <string name="title_activity_calendario">CalendarioActivity</string>
+    <string name="open">OPEN</string>
+    <string name="name">Name</string>
+    <string name="selmira_fernandes">Selmira Fernandes</string>
 </resources>
