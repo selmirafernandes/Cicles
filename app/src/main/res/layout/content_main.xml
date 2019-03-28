@@ -18,51 +18,57 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="89dp"
         android:layout_marginRight="89dp"
-        android:layout_marginBottom="31dp"
-        android:ems="20"
-        android:hint="@string/selmira_fernandes"
+        android:ems="8"
+
         android:text="CICLES"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        android:textAlignment="center"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/design_default_color_primary"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="562dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
         android:onClick="Salvar"
-        android:text="@string/open"
+        android:text="Consulta"
+        android:textAllCaps="true"
+        android:typeface="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="496dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSave">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/name" />
+            android:text="Selmira Fernandes"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:typeface="serif" />
     </android.support.design.widget.TextInputLayout>
 </android.support.constraint.ConstraintLayout>
