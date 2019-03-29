@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">Cicles</string>
-    <string name="action_settings">Settings</string>
     <string name="save">Save</string>
     <string name="title_activity_calendario">CalendarioActivity</string>
     <string name="open">OPEN</string>
     <string name="name">Name</string>
     <string name="selmira_fernandes">Selmira Fernandes</string>
+    <string name="action_settings">Definições</string>
+    <string name="in_cio_da_mentru_o">Início da mentrução:</string>
+    <string name="fim_da_menstrua_o">Fim da menstruação:</string>
+    <string name="p_lula">Pílula:</string>
+    <string name="salvar">SALVAR</string>
+    <string name="cancelar">CANCELAR</string>
 </resources>
