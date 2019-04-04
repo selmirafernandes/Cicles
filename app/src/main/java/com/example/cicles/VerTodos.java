@@ -48,8 +48,14 @@ public class VerTodos extends AppCompatActivity {
 
     public void APAGAR(View view) {
 
+        Intent intent = new Intent(this, Validacao.class);
+
+        startActivity(intent);
+
     }
 
     public void EDITAR(View view) {
+
+        
     }
 }
