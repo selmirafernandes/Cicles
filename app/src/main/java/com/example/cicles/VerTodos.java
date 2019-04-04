@@ -46,4 +46,10 @@ public class VerTodos extends AppCompatActivity {
         return;
     }
 
+    public void APAGAR(View view) {
+
+    }
+
+    public void EDITAR(View view) {
+    }
 }

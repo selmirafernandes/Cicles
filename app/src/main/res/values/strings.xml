@@ -12,4 +12,5 @@
     <string name="salvar">SALVAR</string>
     <string name="cancelar">CANCELAR</string>
     <string name="title_activity_ver_todos">VerTodos</string>
+    <string name="title_activity_validacao">Validacao</string>
 </resources>

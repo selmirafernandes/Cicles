@@ -53,4 +53,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void VER(View view) {
+
+        Intent intent = new Intent(this, VerTodos.class);
+
+        startActivity(intent);
+    }
 }
