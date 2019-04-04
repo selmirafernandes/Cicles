@@ -55,7 +55,9 @@ public class VerTodos extends AppCompatActivity {
     }
 
     public void EDITAR(View view) {
-
         
+
+        Intent intent = new Intent(this, CalendarioActivity.class);
+        startActivity(intent);
     }
 }
