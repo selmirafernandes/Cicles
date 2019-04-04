@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".VerTodos"
+            android:label="@string/title_activity_ver_todos"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cicles.MainActivity" />
+        </activity>
+        <activity
             android:name=".CalendarioActivity"
             android:label="@string/title_activity_calendario"
             android:parentActivityName=".MainActivity"

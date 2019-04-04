@@ -11,4 +11,5 @@
     <string name="p_lula">Pílula:</string>
     <string name="salvar">SALVAR</string>
     <string name="cancelar">CANCELAR</string>
+    <string name="title_activity_ver_todos">VerTodos</string>
 </resources>

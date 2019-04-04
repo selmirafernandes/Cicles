@@ -1,5 +1,6 @@
 package com.example.cicles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class CalendarioActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +32,14 @@ public class CalendarioActivity extends AppCompatActivity {
 
         EditText editTextInicio = (EditText) findViewById(R.id.editTextInicio);
         EditText editTextFim = (EditText) findViewById(R.id.editTextFim);
+        EditText editTextData = (EditText) findViewById(R.id.editTextData);
+        EditText editTextConsulta = (EditText) findViewById(R.id.editTextConsulta);
+
 
         String inicio = editTextInicio.getText().toString();
         String fim = editTextFim.getText().toString();
+        String data = editTextData.getText().toString();
+        String consulta = editTextConsulta.getText().toString();
 
         if(inicio.trim().length()== 0) {
 
@@ -47,6 +54,25 @@ public class CalendarioActivity extends AppCompatActivity {
                 return;
 
         }
+
+        Intent intent = new Intent(this, VerTodos.class);
+
+            intent.putExtra(Variaveis.INICIO, inicio);
+            startActivity(intent);
+
+            intent.putExtra(Variaveis.FIM, fim);
+            startActivity(intent);
+
+            intent.putExtra(Variaveis.DATA, data);
+            startActivity(intent);
+
+            intent.putExtra(Variaveis.CONSULTA, consulta);
+            startActivity(intent);
+
+
+
+
+
         Toast.makeText(this, "Concluido", Toast.LENGTH_LONG).show();
         finish();
     }
