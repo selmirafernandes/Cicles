@@ -3,9 +3,12 @@ package com.example.cicles;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.support.annotation.NonNull;
 
 public class BdCiclesOpenHelper extends SQLiteOpenHelper {
-    public BdCiclesOpenHelper(@androidx.annotation.Nullable Context context, @androidx.annotation.Nullable String name, @androidx.annotation.Nullable SQLiteDatabase.CursorFactory factory, int version) {
+
+
+    public BdCiclesOpenHelper(@NonNull Context context, @NonNull String name, @NonNull SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
