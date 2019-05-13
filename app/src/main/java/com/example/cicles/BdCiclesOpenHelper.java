@@ -18,6 +18,10 @@ public class BdCiclesOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        new BDtipoConsulta(db).cria();
+        new BDtableInicio(db).cria();
+        new BDtableFim(db).cria();
+
     }
 
     @Override
