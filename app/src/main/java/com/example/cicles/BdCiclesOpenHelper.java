@@ -8,8 +8,11 @@ import android.support.annotation.NonNull;
 public class BdCiclesOpenHelper extends SQLiteOpenHelper {
 
 
+    public static final String Data_base_name = "data_base";
+    public static final int VERSION_BD_1 = 1;
+
     public BdCiclesOpenHelper(@NonNull Context context, @NonNull String name, @NonNull SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+        super(context, Data_base_name, null, VERSION_BD_1);
     }
 
     @Override
