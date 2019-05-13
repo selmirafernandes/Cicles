@@ -7,6 +7,7 @@ import android.provider.BaseColumns;
 
 public class BDtableFim implements BaseColumns {
 
+    public static final String CAMPO_DATA_FIM = "dataf";
     public  static  String NOME_TABELA = "Fim";
 
     private SQLiteDatabase db;
@@ -18,7 +19,7 @@ public class BDtableFim implements BaseColumns {
         db.execSQL(
                 "CREATE TABLE " + NOME_TABELA + "(" +
                         _ID + "INTEGER PRIMARY KEY AUTOINCREMENT," +
-                        "dataf" + "TEXT NOT NULL " +
+                        CAMPO_DATA_FIM + "TEXT NOT NULL " +
                         ")"
 
         );

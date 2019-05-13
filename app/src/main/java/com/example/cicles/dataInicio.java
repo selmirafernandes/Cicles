@@ -1,16 +1,19 @@
 package com.example.cicles;
 
+import android.content.ContentValues;
+import android.database.Cursor;
+
 public class dataInicio {
 
-    private int id;
+    private long id;
     private String data;
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -22,5 +25,22 @@ public class dataInicio {
         this.data = data;
     }
 
-    
+    public ContentValues getContentValues() {
+        ContentValues valores = new ContentValues();
+
+        valores.put(BDtableInicio.CAMPO_DATA, data);
+        return valores;
+    }
+
+    public static dataInicio fromCursor (Cursor cursor){
+        long id = cursor.getLong(cursor.getColumnIndex(BDtableInicio._ID));
+        String data = cursor.getString(cursor.getColumnIndex(BDtableInicio.CAMPO_DATA));
+
+        dataInicio dataInicio = new dataInicio();
+        dataInicio.setId(id);
+        dataInicio.setData(data);
+
+        return dataInicio;
+
+    }
 }

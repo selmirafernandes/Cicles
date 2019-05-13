@@ -7,6 +7,7 @@ import android.provider.BaseColumns;
 
 public class BDtableInicio implements BaseColumns {
 
+    public static final String CAMPO_DATA = "datas";
     public  static  String NOME_TABELA = "Inicio";
 
 
@@ -20,7 +21,7 @@ public class BDtableInicio implements BaseColumns {
         db.execSQL(
         "CREATE TABLE " + NOME_TABELA + "(" +
                 _ID + "INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "datas" + "TEXT NOT NULL " +
+                CAMPO_DATA + "TEXT NOT NULL " +
                 ")"
 
         );
